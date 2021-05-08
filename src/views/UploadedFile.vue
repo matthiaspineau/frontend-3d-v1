@@ -160,9 +160,14 @@ export default {
   methods: {
     previewFile() {
       let str = this.$refs.fichier.files[0].name;
+      str = str.toLowerCase()
       this.fileName = str;
 
+      console.log(str)
+
       str = str.substring(str.length - 3);
+
+      console.log(str)
 
       if (str != "stl" && str != "obj") {
         console.log("erreur de fichier");
