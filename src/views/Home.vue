@@ -4,7 +4,7 @@
       <div class="home">
         <div class="category">
           <div class="category__item">
-            <router-link to="/uploaded-file">Déposer un fichier</router-link>
+            <router-link to="/print-home">Déposer un fichier</router-link>
           </div>
   
           <div class="category__item">
