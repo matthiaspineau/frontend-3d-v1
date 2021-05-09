@@ -33,6 +33,16 @@ const routes = [
     name: 'PrintFile',
     component: () => import('../views/PrintFile.vue')
   },
+  {
+    path: '/projet-home',
+    name: 'ProjetHome',
+    component: () => import('../views/ProjetHome.vue')
+  },
+  {
+    path: '/projet-file',
+    name: 'ProjetFile',
+    component: () => import('../views/ProjetFile.vue')
+  },
 ]
 
 const router = new VueRouter({

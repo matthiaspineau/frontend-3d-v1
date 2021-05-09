@@ -8,7 +8,7 @@
           </div>
   
           <div class="category__item">
-            <a href="">autre</a>
+            <router-link to="/projet-home">Démarrer un projet</router-link>
           </div>
         </div>
       </div>

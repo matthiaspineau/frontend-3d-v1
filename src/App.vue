@@ -36,18 +36,6 @@
     </div>
     <router-view/>
 
-    <!-- <footer class="footer">
-      <div class="container">
-        <div class="download">
-          <div class="download__model">
-            <a href="" download="../assets/model/gear.stl">model stl</a>
-          </div>
-           <div class="download__model">
-            <a href="" download="" >model obj</a>
-          </div>
-        </div>
-      </div>
-    </footer> -->
   </div>
 </template>
 
