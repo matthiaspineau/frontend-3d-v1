@@ -1,21 +1,9 @@
-.wrapper__projet {
-    width: 100vw;
-    height: calc(100vh - 88px);
-    background-color: $bg-primary-blue-opacity;
-}
-
 .projet-progress {
+    overflow-x: hidden;
     &__bar {
         height: 2px;
-        width: 25%;
+        width: 0%;
         background-color: $primary-blue;
+        transition: width 0.5s ease-in;
     }
-}
-
-.contain-projet {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $bg-primary-blue-opacity;
 }

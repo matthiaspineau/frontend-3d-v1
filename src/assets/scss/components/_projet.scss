@@ -1,0 +1,168 @@
+.projets {
+    position: relative;
+}
+
+.resume__progress {
+    position: absolute;
+    top: 15px;
+    left: 20%;
+}
+
+.projets-wrapper {
+    min-height: 90vh;
+    background-color: $bg-primary-blue-opacity;
+    // background-color: blue;
+}
+// -------------------
+// wrapper components projet
+.wrapper-components-projet {
+    height: 450px;
+    margin: 25px auto;
+
+    // border: 1px solid green;
+    overflow-y: hidden;
+
+    @include sm-only{
+        width: 80%;
+    }
+
+    @include md-only{
+        width: 70%;
+    }
+
+    @include lg-only{
+        width: 60%;
+    }
+}
+
+// --------------------------------------
+// projet
+.projet-wrapper {
+    height: 400px;
+    margin: 15px;
+    padding: 25px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.projet {
+    position: relative;
+
+    &-content__btn--prev {
+        position: absolute;
+        top: -25px;
+        left: 0;
+        cursor: pointer;
+    }
+
+    &-heading {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &-action {
+        margin-top: 25px;
+    }
+
+    &-content__form {
+        position: relative;
+        margin-bottom: 55px;
+    }
+
+    &-form__input--text {
+        width: 300px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid grey;
+    }
+    
+    &-form__name--error {
+        position: absolute;
+        bottom: -35px;
+        left: 0px;
+        font-size: 12px;
+        color: red;
+        opacity: 0.8;
+    }
+
+    &-form__indication {
+        position: absolute;
+        bottom: -20px;
+        right: 0px;
+        font-size: 12px;
+        opacity: 0.5;
+    }
+
+    &-content__card {
+        width: 180px;
+        // height: 80px;
+        padding: 15px;
+        margin: 15px;
+        text-align: center;
+        color: $blue;
+        border: 1px solid;
+        border-color: $blue;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    &-content__card--active {
+        background-color: $white;
+        border-color: $white;
+    }
+}
+
+
+// --------------------------------------
+// --------------------------------------
+// --------------------------------------
+// projet in progress
+
+.projet-in-progress {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    display: flex;
+
+    .contain-projet-in-progress {
+        width: 700px;
+        height: 100%;
+        min-height: 500px;
+        padding: 25px;
+        background-color: $bg-primary-blue-opacity;
+    }
+
+    .divider {
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+    }
+
+    .the__close {
+        cursor: pointer;
+    }
+
+    // .the__text {
+    //     opacity: 0;
+    // }
+
+    // .divider {
+    //     width: 100%;
+    //     height: 100%;
+    //     background: rgba(0,0,0,0.5);
+    // }
+}
+

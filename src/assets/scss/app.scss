@@ -13,7 +13,11 @@
 @import 'page/_print-file.scss';
 @import 'page/_projet-home.scss';
 @import 'page/_projet-file.scss';
-
+// components
+@import 'components/_projet.scss';
+// animation
+@import 'animation/_transition.scss';
+@import 'animation/_keyframe.scss';
 
 * {
     box-sizing: border-box;
