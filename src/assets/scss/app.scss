@@ -1,13 +1,17 @@
-@import '_normalize.scss';
-@import '_fonts.scss';
-@import '_breakpoints';
-@import '_grids-layouts.scss';
-@import '_colors.scss';
-@import '_buttons.scss';
+// ----- Base
+@import 'base/_normalize.scss';
+@import 'base/_fonts.scss';
+@import 'base/_colors.scss';
+@import 'base/_layouts.scss';
+@import 'base/_utility.scss';
+// ----- Grid - media query 
+@import 'grid/_breakpoints';
+@import 'grid/_grids-layouts.scss';
+// ----- Atome
+@import 'atome/_buttons.scss';
+
 @import '_page.scss';
-@import '_layouts.scss';
 @import '_nav-site.scss';
-@import '_utility.scss';
 // pages
 @import 'page/_print-home.scss';
 @import 'page/_print-file.scss';
