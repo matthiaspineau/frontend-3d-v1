@@ -19,6 +19,9 @@
         <li class="nav--menu__li">
           <router-link to="/shop">Shop</router-link>
         </li>
+        <li class="nav--menu__li">
+          <router-link to="/devs">Devs</router-link>
+        </li>
       </ul>
 
       <div class="nav--action">

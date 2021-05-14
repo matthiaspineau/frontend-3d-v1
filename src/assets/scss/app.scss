@@ -4,22 +4,23 @@
 @import 'base/_colors.scss';
 @import 'base/_layouts.scss';
 @import 'base/_utility.scss';
+@import 'base/_mesure.scss';
 // ----- Grid - media query 
 @import 'grid/_breakpoints';
 @import 'grid/_grids-layouts.scss';
 // ----- Atome
 @import 'atome/_buttons.scss';
-
+// ----- (pas de dossier)
 @import '_page.scss';
 @import '_nav-site.scss';
-// pages
+// ----- Pages
 @import 'page/_print-home.scss';
 @import 'page/_print-file.scss';
 @import 'page/_projet-home.scss';
 @import 'page/_projet-file.scss';
-// components
+// ------ Components
 @import 'components/_projet.scss';
-// animation
+// ----- Animation
 @import 'animation/_transition.scss';
 @import 'animation/_keyframe.scss';
 
@@ -28,11 +29,6 @@
 }
 
 #app {
-    // font-family: Avenir, Helvetica, Arial, sans-serif;
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
-    // text-align: center;
-    // color: #2c3e50;
     font-family: $font-mulish-medium;
 }
   
@@ -71,18 +67,6 @@ a {
         text-decoration: none;
     }
 }
-
-// .btn {
-//     display: inline-block;
-//     margin-top: 15px;
-//     padding: 7px 8px 8px 8px;
-//     color: #fff;
-//     font-size: 15px;
-//     background-color: rgb(13, 67, 218);
-//     border-radius: 2px;
-//     border: none;
-//     cursor: pointer;
-// }
 
 
 
