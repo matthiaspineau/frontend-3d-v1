@@ -26,9 +26,7 @@
 }
 
 // ------------------
-.uploadedFile {
-    // background: rgba(248, 248, 251);
-}
+
 
 .wrapper__uploaded {
     display: inline-flex;
@@ -165,64 +163,3 @@
     border: 1px solid rgb(173, 173, 173);
 }
 
-
-.footer {
-    padding: 25px;
-    background: #000;
-
-    a {
-        color: #fff
-    }
-
-    .download {
-        display: flex;
-        justify-content: center;
-
-        &__model {
-            margin: 15px;
-        }
-    }
-}
-// --------------------------------------
-// --------------------------------------
-// --------------------------------------
-.nav {
-    text-align: center;
-}
-// --------------------------------------
-// --------------------------------------
-// --------------------------------------
-.home {
-    margin-top: 55px;
-}
-
-.category {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &__item {
-        width: 45%;
-        min-height: 300px;
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        background: rgb(212, 212, 212);
-        border-radius: 5px;
-    }
-
-    a {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 7px 12px 8px 12px;
-        color: #fff;
-        font-size: 15px;
-        text-decoration: none;
-        background-color: rgb(13, 67, 218);
-        border-radius: 2px;
-        border: none;
-        cursor: pointer; 
-    }
-}

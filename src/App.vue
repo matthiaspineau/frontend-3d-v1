@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <div id="nav" class="nav">
+      <!-- logo - branding -->
       <div class="nav--branding">
         <router-link to="/">U3DM</router-link>
       </div>
+      <!-- Navigation site -->
       <ul class="nav--menu">
         <li class="nav--menu__li">
           <ul class="nav--submenu"><span class="nav--submenu__service">Service</span>
@@ -19,11 +21,9 @@
         <li class="nav--menu__li">
           <router-link to="/shop">Shop</router-link>
         </li>
-        <li class="nav--menu__li">
-          <router-link to="/devs">Devs</router-link>
-        </li>
       </ul>
 
+      <!-- Action nav -->
       <div class="nav--action">
         <div class="nav--action__devis">
           <button class="btn btn--plain">Obtenir un devis</button>
@@ -35,9 +35,27 @@
           <img :src="require('@/assets/images/icon_shop.svg')" alt="icon shop">
         </div>
       </div>
+
+      <!-- Menu hamburger -->
+      <div class="hamburger">
+        <span>menu</span>
+      </div>
        
     </div>
+
     <router-view/>
+
+    <!-- footer developement -->
+    <!-- <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <span>Dev enrironement - </span>
+          <div class="footer-content__link">
+            <router-link to="/devs">Devs</router-link>
+          </div>
+        </div>
+      </div>
+    </footer> -->
 
   </div>
 </template>

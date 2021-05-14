@@ -14,6 +14,7 @@
 @import '_page.scss';
 @import '_nav-site.scss';
 // ----- Pages
+@import 'page/_home.scss';
 @import 'page/_print-home.scss';
 @import 'page/_print-file.scss';
 @import 'page/_projet-home.scss';
@@ -23,6 +24,8 @@
 // ----- Animation
 @import 'animation/_transition.scss';
 @import 'animation/_keyframe.scss';
+// ----- Layout
+@import 'layout/_footer.scss';
 
 * {
     box-sizing: border-box;
@@ -31,10 +34,9 @@
 #app {
     font-family: $font-mulish-medium;
 }
+
   
 #nav {
-    padding: 30px;
-  
     a {
         // font-weight: bold;
         // color: #2c3e50;
