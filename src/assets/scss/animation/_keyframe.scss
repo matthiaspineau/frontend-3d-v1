@@ -40,26 +40,29 @@
 
 .appearIn__item--2 {
     // animation-delay: 2s;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
 }
 
 .appearIn.appearIn__item--3 {
     // animation-delay: 25s;
-    animation-duration: 1.5s;
+    animation-duration: 0.9s;
 }
 
-// .appearIn__item--4 {
-//     transition-delay: 9s;
-// }
+.appearIn__item--4 {
+    animation-duration: 1.1s;
+}
 
-// .appearIn__item--5 {
-//     transition-delay: 1s;
-// }
+.appearIn__item--5 {
+    animation-duration: 1.4s;
+}
 
-// .appearIn__item--6 {
-//     transition-delay: 5s;
-// }
+.appearIn__item--6 {
+    animation-duration: 1.7s;
+}
 
+.appearIn__item--7 {
+    animation-duration: 2s;
+}
 
 // --------------------------------------
 // --------------------------------------

@@ -1,9 +1,45 @@
 <template>
-    <div>ProjetUpload</div>
+  <div class="projet-wrapper">
+
+    <div class="projet">
+      <span @click="prev" class="projet__btn--prev">retour</span>
+      
+      <h3 class="projet-heading">Glissez et déposez vos fichiers ou bien parcourir mes fichiers</h3>
+
+      <div class="projet-content">
+        
+        <p class="p">Pour permettre de comprendre au mieux votre projet, nous acceptons tous types de fichiers. Image, spécification, croquis, plan,…</p>
+
+        <div class="zone">
+            a
+        </div>
+
+      </div>
+
+      <div class="projet-action">
+        <button class="btn btn--plain btn--center" @click="next">
+          Etape suivante
+        </button>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
+data() {
+    return {
+        aa: '',
+    };
+  },
+  methods: {
+    prev() {
+      this.$emit('prev');
+    },
+    next() { 
+        this.$emit('next', { userFile: this.aa });
+    },
+  },
     name: 'ProjetUpload'
 }
 </script>

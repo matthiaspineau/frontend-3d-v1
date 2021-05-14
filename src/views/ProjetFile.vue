@@ -21,6 +21,18 @@
           <transition name="anime">
             <projet-date v-if="steps.stepActive == 3" @next="goNext" @prev="goPrev"></projet-date>
           </transition>
+
+          <transition name="anime">
+            <projet-apply v-if="steps.stepActive == 4" @next="goNext" @prev="goPrev"></projet-apply>
+          </transition>
+
+           <transition name="anime">
+            <projet-postal v-if="steps.stepActive == 5" @next="goNext" @prev="goPrev"></projet-postal>
+          </transition>
+
+          <transition name="anime">
+            <projet-upload v-if="steps.stepActive == 6" @next="goNext" @prev="goPrev"></projet-upload>
+          </transition>
         
       </div>
 
@@ -36,18 +48,23 @@ import ProjetName from "@/components/projet/ProjetName.vue";
 import ProjetType from "@/components/projet/ProjetType.vue";
 import ProjetDate from "@/components/projet/ProjetDate.vue";
 import ProjetInProgress from '@/components/projet/ProjetInProgress.vue';
+import ProjetApply from '@/components/projet/projetApply.vue';
+import ProjetPostal from '../components/projet/ProjetPostal.vue';
+import ProjetUpload from '../components/projet/ProjetUpload.vue';
 
 export default {
   data() {
     return {
 			steps: {
-				maxSteps: 3,
+				maxSteps: 6,
 				stepActive: 1,
 			},
       userProjet: {
         title: '',
         type: '',
-        date: ''
+        date: '',
+        apply: '',
+        assets: []
       },
       projetProgress: false
     };
@@ -68,7 +85,7 @@ export default {
       this.steps.stepActive += 1;
   
       this.setProjet(payload)
-      this.getProjet()
+      // this.getProjet()
     },
     setProjet(payload) {
       let key = Object.keys(payload)
@@ -87,6 +104,9 @@ export default {
     ProjetType,
     ProjetDate,
     ProjetInProgress,
+    ProjetApply,
+    ProjetPostal,
+    ProjetUpload,
   },
 };
 </script>

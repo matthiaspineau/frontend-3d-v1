@@ -31,7 +31,7 @@
     }
 
     @include lg-only{
-        width: 60%;
+        width: 90%;
     }
 }
 
@@ -115,6 +115,8 @@
         cursor: pointer;
         transition: 0.3s;
     }
+
+
 
     &-content__card--active {
         background-color: $white;

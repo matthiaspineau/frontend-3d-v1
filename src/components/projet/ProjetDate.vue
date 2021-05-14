@@ -1,6 +1,5 @@
 <template>
   <div class="projet-wrapper">
-    <!-- Progress bar -->
 
     <div class="projet">
       <span @click="prev" class="projet__btn--prev">retour</span>
