@@ -11,7 +11,7 @@
 // ----- Atome
 @import 'atome/_buttons.scss';
 // ----- (pas de dossier)
-@import '_page.scss';
+
 @import '_nav-site.scss';
 // ----- Pages
 @import 'page/_home.scss';
@@ -26,6 +26,15 @@
 @import 'animation/_keyframe.scss';
 // ----- Layout
 @import 'layout/_footer.scss';
+
+// --------------------------------
+// --------------------------------
+@import 'developement/_page.scss';
+@import 'developement/_accueil.scss';
+@import 'developement/_ui.scss';
+@import 'developement/_ui-tab.scss';
+// --------------------------------
+// --------------------------------
 
 * {
     box-sizing: border-box;

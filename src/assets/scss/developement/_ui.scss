@@ -1,0 +1,54 @@
+.ui {
+    margin-top: 15px;
+
+
+    // Tab
+    .tab {
+        max-width: 800px;
+        min-height: 500px;
+        border-bottom: 1px solid;
+        &-list {
+            padding: 25px;
+        }
+
+        &-nav {
+            display: flex;
+            border-bottom: 1px solid;
+            border-color: rgba(0,0,0,0.5);
+        }
+
+        &-nav__link {
+            margin-left: 25px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            border-bottom: 1px solid;
+            border-color: rgba(0,0,0,0.0);
+        }
+
+        &-nav__link--active {
+            color: blue;
+            border-color: blue;
+            transition: 0.3s;
+        }
+
+        // &-item__content {
+        //     opacity: 0;
+        //     transition: 0.9s;
+        // }
+
+        // &-item__content--active {
+        //     opacity: 1;
+           
+        // }
+        
+        &-item {
+            // display: none;
+            display: block;
+        }
+
+        &-item--active {
+            display: block;
+        }
+
+    }
+}

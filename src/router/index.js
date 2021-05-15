@@ -19,9 +19,22 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/Shop.vue')
   },
   {
+    // developement
     path: '/uploaded-file',
     name: 'UploadedFile',
-    component: () => import('../views/UploadedFile.vue')
+    component: () => import('../developement/view/UploadedFile.vue')
+  },
+  {
+    // developement
+    path: '/ui',
+    name: 'Ui',
+    component: () => import('../developement/view/Ui.vue')
+  },
+  {
+    // developement
+    path: '/ui-tab',
+    name: 'UiTab',
+    component: () => import('../developement/view/UiTab.vue')
   },
   {
     path: '/print-home',
