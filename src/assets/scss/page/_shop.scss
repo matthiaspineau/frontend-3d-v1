@@ -1,0 +1,75 @@
+
+.shop-wrapper {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr auto;
+
+    &-progress {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    &-card {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    &-tiket {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
+}
+
+.shop-progress {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.shop-tiket {
+    min-width: 300px;
+
+    &-list {
+        padding: 15px;
+        background-color: #f3f6fa;
+    }
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0px;
+        list-style-type: none;
+
+        &__text--light {
+            color: rgba(0,0,0,0.5)
+        }
+
+        &__text--bold {
+            font-weight: bold;
+        }
+    }
+
+    &-item--last {
+        padding: 12px 0px;
+        border-top: 1px solid;
+        border-color: rgba(0,0,0,0.2);
+    }
+
+    &-action-list {
+        margin-top: 45px;
+        padding: 0px;
+    }
+
+    &-action-item {
+        padding: 5px 0px;
+        list-style-type: none;
+
+        &__span {
+            display: inline-block;
+            padding-left: 10px;
+            color: rgba(0,0,0,0.5)
+        }
+    }
+}

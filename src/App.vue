@@ -32,7 +32,9 @@
           <img :src="require('@/assets/images/icon_user.svg')" alt="icon user">
         </div>
         <div class="nav--action__shop">
-          <img :src="require('@/assets/images/icon_shop.svg')" alt="icon shop">
+          <router-link to="/shop">
+            <img :src="require('@/assets/images/icon_shop.svg')" alt="icon shop">
+          </router-link>
         </div>
       </div>
 
