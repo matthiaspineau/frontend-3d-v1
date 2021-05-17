@@ -32,6 +32,9 @@
           <span>Prix</span>
           <span> -- Ht</span>
         </div>
+        <div>
+          <button @click="debug" class="btn btn--plain">debug</button>
+        </div>
       </div>
 
       <div class="accord-list" ref="accordion" data-active="item1">
@@ -39,7 +42,7 @@
         <div class="accord-item accord-item--active" ref="item1">
           <div class="accord-item-heading" @click="openAccordItem('item1')">
             <img class="accord-item-heading__icon" :src="require('@/assets/images/icon-defaut.svg')" alt="icon empty" />
-            <h4 class="accord-item-heading__title h4">Déposer votre fichier impression 3D</h4>
+            <h4 class="accord-item-heading__title h4">{{ article.name == '' ? 'Déposer votre fichier impression 3D' : article.name }}  </h4>
             <img class="accord-item-heading__arrow" :src="require('@/assets/images/arrow-circle.svg')" alt="arrow circle" />
           </div>
           <div class="accord-item-content">
@@ -138,7 +141,8 @@ export default {
       article: {
         name: '',
         src: '',
-        colored: ''
+        colored: '',
+        img: ''
       },
     }
   },
@@ -167,9 +171,10 @@ export default {
      * Afficle le 'mode-stl'
      */
     previewFile() {
+      this.setValueArticle('name', this.$refs.fichier.files[0].name)
       this.isUpload = true;
-      this.loadModel()
-      this.emptyModel = false
+      this.loadModel();
+      this.emptyModel = false;
     },
     /**
      * loadModel
@@ -179,7 +184,8 @@ export default {
       let reader = new FileReader();
         reader.onload = (e) => {
           this.stlBase64 = e.target.result;
-          // console.log(this.$refs.modelstl.renderer.domElement.dataset.sizing);
+          this.setValueArticle('img', e.target.result);
+          this.setValueArticle('src', e.target.result)
         };
         reader.readAsDataURL(this.$refs.fichier.files[0]);
     },
@@ -203,6 +209,12 @@ export default {
       this.screenshotFile = this.$refs.modelstl.renderer.domElement.toDataURL("image/png",1);
       this.article.src = this.$refs.modelstl.renderer.domElement.toDataURL("image/png",1);
     },
+    setValueArticle(key, value) {
+      this.article[key] = value
+    },
+    debug() {
+      console.log(this.article)
+    }
   },
   name: "PrintFile",
   components: {
