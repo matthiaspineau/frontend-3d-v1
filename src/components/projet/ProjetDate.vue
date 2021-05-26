@@ -56,7 +56,7 @@ export default {
       this.$emit('prev');
     },
     next() {
-      this.$emit("next", { date: this.currentSelected });
+      this.$emit("next", { deliveryTime: this.currentSelected });
     },
     selectType(title) {
       this.currentSelected = title

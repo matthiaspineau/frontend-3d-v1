@@ -6,7 +6,7 @@
 
       <!-- Content page -->
       <div class="projet-content projet-content__form">
-        <input type="text" v-model="projetTilte" 
+        <input type="text" v-model="name" 
         class="projet-form__input--text" 
         placeholder="Nommer votre projet" 
         @keypress.enter="next" />
@@ -29,15 +29,15 @@
 export default {
   data() {
     return {
-      projetTilte: '',
-      errorForm: false
+      name: '',
+      errorForm: false,
     };
   },
   methods: {
     next() {
-      if (this.projetTilte !== null && this.projetTilte !== '') {
+      if (this.name !== null && this.name !== '') {
         this.errorForm = false
-        this.$emit('next', { title: this.projetTilte });
+        this.$emit('next', { name: this.name });
       } else {
         this.errorForm = true
       }

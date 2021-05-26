@@ -1,0 +1,144 @@
+[
+    {
+        "type": "header",
+        "version": "4.8.5",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "local_u3dm"
+    },
+    {
+        "type": "table",
+        "name": "ref_project",
+        "database": "local_u3dm",
+        "data": [
+            {
+                "id": "1",
+                "name": "Design 3D et Impression 3D",
+                "description": "<font color=#dc0a7a >\r\nRéalisation d'un projet à distance, à partir d'une idée, de croquis, de fichiers...\r\n<br>La description doit être la plus détaillée possible. Indiquer le(s) format(s) de fichier(s) attendu(s).",
+                "scanner": "0",
+                "shipping": "0",
+                "file": "1",
+                "enabled": "1",
+                "description_maker": "Réalisation d'un projet à distance, à partir d'une idée, de croquis, de fichiers pour le design et l'impression 3D.\r\nImpression à réaliser selon les indications du client.\r\nNe pas inclure les frais de livraison (calculés automatiquement)",
+                "tagSpec": null,
+                "address_project": null,
+                "address_project_label": null,
+                "shipping_choice": "1"
+            },
+            {
+                "id": "3",
+                "name": "Design 3D (déplacement du maker)",
+                "description": "<font color=#dc0a7a >\r\nMission en collaboration chez le client.\r\n<br> Adresse à préciser dans la description du projet.",
+                "scanner": "0",
+                "shipping": "0",
+                "file": "1",
+                "enabled": "1",
+                "description_maker": "Mission en collaboration chez le client.\r\n<br> Adresse à préciser dans la description du projet.",
+                "tagSpec": null,
+                "address_project": null,
+                "address_project_label": null,
+                "shipping_choice": null
+            },
+            {
+                "id": "4",
+                "name": "Numérisation 3D (déplacement du maker)",
+                "description": "<font color=#dc0a7a >\r\nLe maker se déplace sur le lieu du projet pour le scanner.",
+                "scanner": "1",
+                "shipping": "0",
+                "file": "1",
+                "enabled": "1",
+                "description_maker": "Vous vous déplacez dans les locaux du client ou sur le lieu du projet indiqué.",
+                "tagSpec": null,
+                "address_project": "1",
+                "address_project_label": "Adresse de déplacement",
+                "shipping_choice": null
+            },
+            {
+                "id": "5",
+                "name": "Numérisation 3D",
+                "description": "<font color=#dc0a7a >\r\nLe client envoie un objet au maker pour le scanner.",
+                "scanner": "1",
+                "shipping": "1",
+                "file": "1",
+                "enabled": "1",
+                "description_maker": "Vous recevez l'objet du client à numériser. L'attendu est un fichier.\r\nVous devrez renvoyer l'objet au client, s'il le souhaite.",
+                "tagSpec": null,
+                "address_project": "1",
+                "address_project_label": "Adresse pour renvoi  de l'objet",
+                "shipping_choice": null
+            },
+            {
+                "id": "6",
+                "name": "Impression 3D série",
+                "description": "<font color=#dc0a7a >\r\nImpression 3D mini-série",
+                "scanner": "0",
+                "shipping": "0",
+                "file": "0",
+                "enabled": "1",
+                "description_maker": "Impression 3D mini-série",
+                "tagSpec": null,
+                "address_project": null,
+                "address_project_label": null,
+                "shipping_choice": "1"
+            },
+            {
+                "id": "7",
+                "name": "Design 3D (à distance)",
+                "description": "<font color=#dc0a7a >\r\n<br> Le maker réalise la prestation à distance dans ses locaux",
+                "scanner": "0",
+                "shipping": "0",
+                "file": "1",
+                "enabled": "1",
+                "description_maker": "<br>\r\nDesign 3D, vous réalisez la prestation à distance dans vos locaux",
+                "tagSpec": null,
+                "address_project": null,
+                "address_project_label": null,
+                "shipping_choice": null
+            },
+            {
+                "id": "8",
+                "name": "Impression (Frais port Maker)",
+                "description": "Utilisé temporairement pour résoudre cas ou le maker prend en charge la livraison.",
+                "scanner": "0",
+                "shipping": "0",
+                "file": "0",
+                "enabled": "0",
+                "description_maker": null,
+                "tagSpec": null,
+                "address_project": null,
+                "address_project_label": null,
+                "shipping_choice": null
+            },
+            {
+                "id": "9",
+                "name": "Commande masques anti-projections (Covid19)",
+                "description": "<font color=#760039> <b>Indiquer dans la description le nombre de masques anti-projections souhaités <\/b>",
+                "scanner": "0",
+                "shipping": "1",
+                "file": "0",
+                "enabled": "1",
+                "description_maker": null,
+                "tagSpec": "COVID",
+                "address_project": "1",
+                "address_project_label": "Adresse de livraison",
+                "shipping_choice": null
+            },
+            {
+                "id": "10",
+                "name": "Don pour fabrication masques anti-projections (Covid19)",
+                "description": "<b><font color=#760039> Indiquer dans la description le montant HT de votre don <\/b>.\r\n<br>Préciser si vous souhaitez apparaitre dans la news",
+                "scanner": "0",
+                "shipping": "0",
+                "file": "0",
+                "enabled": "1",
+                "description_maker": null,
+                "tagSpec": "COVID",
+                "address_project": "0",
+                "address_project_label": null,
+                "shipping_choice": "0"
+            }
+        ]
+    }
+]

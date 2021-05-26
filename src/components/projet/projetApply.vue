@@ -1,24 +1,27 @@
 <template>
   <div class="projet-wrapper">
-
     <div class="projet">
       <span @click="prev" class="projet__btn--prev">retour</span>
 
       <h3 class="projet-heading">Application</h3>
 
       <div class="projet-content">
-
         <!-- Items -->
-        <div v-for="(item, index) in items" :key="index"
-        class="projet-content__card appearIn"
-        :class="[{'projet-content__card--active' : currentSelected == item.title}, 'appearIn__item--'+(index+1)]"
-        @click="selectType(item.title)">
-            <div>
-                <img :src="require('@/assets/images/img_empty.svg')" alt="">
-                <p>{{ item.text }}</p>
-            </div>
+        <div
+          v-for="(item, index) in items"
+          :key="index"
+          class="projet-content__card appearIn"
+          :class="[
+            { 'projet-content__card--active': fields.indexOf(item.id) !== -1 },
+            'appearIn__item--' + (index + 1),
+          ]"
+          @click="selectItems(item.id)"
+        >
+          <div>
+            <img :src="require('@/assets/images/img_empty.svg')" alt="" />
+            <p>{{ item.name }}</p>
+          </div>
         </div>
-
       </div>
 
       <div class="projet-action">
@@ -27,50 +30,44 @@
         </button>
       </div>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-      data() {
+  props: {
+    items: {
+      type: Array,
+      default() {
+        return [];
+      },
+    },
+  },
+  data() {
     return {
-      items: [
-        {
-          id: 1,
-          title: 'robotique',
-          text: 'Robotique'
-        },
-         {
-          id: 2,
-          title: 'medical',
-          text: 'Médical'
-        },
-        {
-          id: 4,
-          title: 'electronique',
-          text: 'Electronique'
-        },
-        {
-          id: 5,
-          title: 'autre',
-          text: 'Autre'
-        }
-      ],
-      currentSelected: 'robotique'
-    }
+      fields: [],
+    };
   },
   methods: {
     prev() {
-      this.$emit('prev');
+      this.$emit("prev");
     },
     next() {
-      this.$emit("next", { apply: this.currentSelected });
+      this.$emit("next", { fields: this.fields });
     },
-    selectType(title) {
-      this.currentSelected = title
-    }
+    selectItems(id) {
+      if (this.fields.indexOf(id) !== -1) {
+
+        this.fields = this.fields.filter(elt => {
+          return elt !== id
+        })
+ 
+      } else {
+    
+        this.fields.push(id)
+      }
+    },
   },
-    name: 'ProjetApply'
-}
+  name: "ProjetApply",
+};
 </script>

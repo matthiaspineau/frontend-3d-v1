@@ -16,7 +16,7 @@
 // -------------------
 // wrapper components projet
 .wrapper-components-projet {
-    height: 450px;
+    // height: 450px;
     margin: 25px auto;
 
     // border: 1px solid green;
@@ -38,7 +38,7 @@
 // --------------------------------------
 // projet
 .projet-wrapper {
-    height: 400px;
+    // height: 400px;
     margin: 15px;
     padding: 25px;
 
@@ -51,6 +51,7 @@
 
 .projet {
     position: relative;
+    max-width: 70%;
 
     &-content__btn--prev {
         position: absolute;
@@ -116,12 +117,20 @@
         transition: 0.3s;
     }
 
+    // &-content__card--small {
+    //     width: 120px;
+    //     // height: 80px;
+    // }
+
 
 
     &-content__card--active {
         background-color: $white;
         border-color: $white;
     }
+
+
+
 }
 
 

@@ -1,0 +1,165 @@
+[
+    {
+        "type": "header",
+        "version": "4.8.5",
+        "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+        "type": "database",
+        "name": "local_u3dm"
+    },
+    {
+        "type": "table",
+        "name": "ref_field",
+        "database": "local_u3dm",
+        "data": [
+            {
+                "id": "1",
+                "name": "Série",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "2",
+                "name": "Logement",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "3",
+                "name": "Communication \/ Makerting",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "4",
+                "name": "Luxe",
+                "description": "Créer les formes et les volumes de tous les objets qui nous entourent au quotidien",
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "5",
+                "name": "Industrie",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "6",
+                "name": "Bâtiment",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "7",
+                "name": "Education",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "8",
+                "name": "Objet d’art",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "9",
+                "name": "Moulage",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "10",
+                "name": "Mode",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "11",
+                "name": "Prototype",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "12",
+                "name": "Packaging",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "13",
+                "name": "Outillage",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "14",
+                "name": "Médical",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "15",
+                "name": "Alimentaire",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "16",
+                "name": "Rétro-conception",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "17",
+                "name": "X Autre X",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "18",
+                "name": "Urbanisme",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "19",
+                "name": "Modélisme",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            },
+            {
+                "id": "20",
+                "name": "Outillage",
+                "description": null,
+                "link": null,
+                "enabled": "0"
+            },
+            {
+                "id": "21",
+                "name": "COVID19",
+                "description": null,
+                "link": null,
+                "enabled": "1"
+            }
+        ]
+    }
+]

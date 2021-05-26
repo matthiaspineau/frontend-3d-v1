@@ -4,19 +4,19 @@
     <div class="projet">
       <span @click="prev" class="projet__btn--prev">retour</span>
       
-      <h3 class="projet-heading">type</h3>
+      <h3 class="projet-heading">Choisissez votre type de projet</h3>
 
       <!-- Cards -->
       <div class="projet-content">
 
         <!-- Items -->
         <div v-for="(item, index) in items" :key="index"
-        class="projet-content__card appearIn"
-        :class="[{'projet-content__card--active' : currentSelected == item.title}, 'appearIn__item--'+(index+1)]"
-        @click="selectType(item.title)">
+        class="projet-content__card projet-content__card--small appearIn"
+        :class="[{'projet-content__card--active' : currentSelected == item.id}, 'appearIn__item--'+(index+1)]"
+        @click="selectType(item.id, item.scanner)">
           <div class="projet-content__card__media">
             <img :src="require('@/assets/images/img_empty.svg')" alt="" />
-            <p>{{ item.text }}</p>
+            <p>{{ item.name }}</p>
           </div>
         </div>
 
@@ -33,29 +33,16 @@
 
 <script>
 export default {
+  props: {
+    items: {
+      type: Array,
+      default() { return [] }
+    }
+  },
   data() {
     return {
-      items: [
-        {
-          id: 1,
-          img: 'img_empty.svg',
-          title: 'numerisation',
-          text: 'Numerisation 3D'
-        },
-         {
-          id: 2,
-          img: 'img_empty.svg',
-          title: 'modelisation',
-          text: 'Modélisation 3D'
-        },
-         {
-          id: 3,
-          img: 'img_empty.svg',
-          title: 'impression',
-          text: 'Impression 3d'
-        }
-      ],
-      currentSelected: 'numerisation'
+      currentSelected: 1,
+      scanOnSite: false
     }
   },
   methods: {
@@ -63,10 +50,11 @@ export default {
       this.$emit('prev');
     },
     next() {
-      this.$emit('next', { type: this.currentSelected });
+      this.$emit('next', { projectType: this.currentSelected, scanOnSite: this.scanOnSite });
     },
-    selectType(title) {
-      this.currentSelected = title
+    selectType(id, scanner) {
+      this.currentSelected = id
+      scanner > 0 ? this.scanOnSite = true : this.scanOnSite = false
     }
   },
   name: "ProjetType",
