@@ -1,3 +1,4 @@
+// ----- Mulish
 @font-face {
     font-family: 'mulish-medium';
     src: url('../fonts/mulish/Mulish-Medium.ttf');
@@ -16,6 +17,64 @@
     font-weight: 700;
 }
 
+// ----- Poppins
+
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'poppins-semi-bold';
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+
+// ----- Heebo
+
+@font-face {
+    font-family: 'heebo-regular';
+    src: url('../fonts/heebo/Heebo-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'heebo-medium';
+    src: url('../fonts/heebo/Heebo-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'heebo-semi-bold';
+    src: url('../fonts/heebo/Heebo-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'heebo-bold';
+    src: url('../fonts/heebo/Heebo-Bold.ttf');
+    font-weight: 700;
+}
+
+// -----
+
 $font-mulish-medium: 'mulish-medium';
 $font-mulish-bold: 'mulish-bold';
 $font-mulish-semi-bold: 'mulish-semi-bold';
+
+$font-poppins-medium: 'poppins-medium';
+$font-poppins-bold: 'poppins-bold';
+$font-poppins-semi-bold: 'poppins-semi-bold';
+
+
+$font-heebo-regular: 'heebo-regular';
+$font-heebo-medium: 'heebo-medium';
+$font-heebo-semi-bold: 'heebo-semi-bold';
+$font-heebo-bold: 'heebo-bold';
