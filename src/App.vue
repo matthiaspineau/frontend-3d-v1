@@ -45,19 +45,9 @@
        
     </div>
 
-    <router-view/>
 
-    <!-- footer developement -->
-    <!-- <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <span>Dev enrironement - </span>
-          <div class="footer-content__link">
-            <router-link to="/devs">Devs</router-link>
-          </div>
-        </div>
-      </div>
-    </footer> -->
+    <router-view/>
+ 
 
   </div>
 </template>

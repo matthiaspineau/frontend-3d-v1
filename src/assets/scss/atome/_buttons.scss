@@ -3,20 +3,26 @@
     // flex-direction: row;
     // justify-content: center;
     // align-items: center;
-    // padding: 12px 30px;
     display: inline-block;
+    padding: 12px 30px;
     padding: 12px 30px 12px 30px;
-    // font-family: Mulish;
-    font-style: normal;
-    font-weight: 700;
+    font-family: $font-poppins-semi-bold;
+    font-weight: 600;
     font-size: 14px;
     line-height: 18px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 // remplissage
 .btn--primary {
-    background-color: $primary-blue;
+    color: $white;
+    background-color: $accent;
+}
+
+.btn--secondary {
+    color: $accent;
+    background-color: $white;
 }
 
 .btn--plain {
@@ -34,6 +40,10 @@
 .btn--center {
    display: block;
    margin: 20px auto 0px auto;
+}
+
+.btn--inline {
+    display: inline-block;
 }
 
 // largeur
