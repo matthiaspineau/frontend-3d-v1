@@ -1,20 +1,66 @@
+// @include sm-only{
+//     max-width: map-get($container-max-widths, sm);
+// }
+
+// @include md-only{
+//     max-width: map-get($container-max-widths, md);
+// }
+
+// @include lg-only{
+//     max-width: map-get($container-max-widths, lg);
+// }
 .home {
-    margin-top: 55px;
+    // margin-top: 55px;
 }
 
-.category {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home-header {
+    padding: 65px 0px;
+    background: $main;
+    // background-image: url('../../u.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
 
-    &__item {
-        width: 45%;
-        padding: 25px;
-        margin: 25px;
-        min-height: 300px;
-       
-        background: rgb(212, 212, 212);
-        border-radius: 5px;
+    h1 {
+        color: $white;
     }
 
+    @include md-only{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+.home-header-content {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+
+}
+
+.home-header-card {
+    min-width: 100%;
+    padding: 25px;
+    margin: 25px;
+    min-height: 300px;
+    color: $white;
+    background: $accent;
+    border-radius: 5px;
+
+    .h4 {
+        color: $white;
+    }
+
+    // @include sm-only{
+    //     width: 45%;
+    // }
+
+    @include md-only{
+        min-width: inherit;
+        width: 45%;
+        background: none;
+    }
 }
